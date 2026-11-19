@@ -1,6 +1,15 @@
 #Sum and average of n numbers for loop
-a = int(input("Enter the number of elements: "))
-sum = 0
-for i in range(a):
-    num = float(input("Enter number: "))
-    sum += num
+n = int(input("Enter the number of elements: "))
+total = 0.0
+
+for i in range(n):
+    num = float(input(f"Enter number {i + 1}: "))
+    total += num
+
+print(f"Sum: {total}")
+
+if n > 0:
+    average = total / n
+    print(f"Average: {average}")
+else:
+    print("Average: Undefined (no elements entered)")
